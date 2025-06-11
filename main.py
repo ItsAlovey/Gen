@@ -35,7 +35,7 @@ if monthGen == 1:
 elif monthGen == 2:
     month = "February" # setting the month to February
     # Check if the current year is a leap year to determine the number of days in February
-    if datetime.datetime.now().year % 4 == 0 and (datetime.datetime.now().year % 100 != 0 or datetime.datetime.now().year % 400 == 0):
+    if birthYear % 4 == 0 and (birthYear % 100 != 0 or birthYear % 400 == 0):
         days = 29 # If it's a leap year, February has 29 days
     else:
         days = 28  # If it's not a leap year, February has 28 days
