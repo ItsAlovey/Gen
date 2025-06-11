@@ -147,14 +147,14 @@ personalityTypes = ["ISTJ", "ISFJ","INFJ","INTJ","ISTP","ISFP","INFP","INTP","ES
 personalityType = personalityTypes[secrets.randbelow(len(personalityTypes))] #picking a random personality type
 
 #Output
-print("\n") # Print a newline for better readability
-print(f"Sex: " + sex ) # Output the sex of the character
-print(f"Name: {firstName} {lastName}") # Output the full name
-print(f"Age: " + str(age))  # Output the age
-print(f"Birth Date: {month} {day}, {birthYear}")  # Output the birth date 
-print(f"From: " + state + ", " + country)  # Print the generated location
-print(f"Height: " + str(height) + "cm" ) # Output the height in centimeters
-print(f"Weight: " + str(weight) + "kg" ) # Output weight in kilograms
-print(f"Hair Color: " + hairColor) # Output the hair color
-print(f"Eye Color: " + eyeColor)  # Output the eye color
-print(f"Personality Type: " + personalityType) # Output the personality type
+print("\n")
+print(f"✨ Character Profile ✨")
+print(f"------------------------")
+print(f"Name: {firstName} {lastName}")
+print(f"Sex: {sex}")
+print(f"Age: {age} (Born on {month} {day}, {birthYear})")
+print(f"From: {state}, {country}")
+print(f"Height: {height}cm | Weight: {weight}kg")
+print(f"Hair: {hairColor} | Eyes: {eyeColor}")
+print(f"Personality Type: {personalityType}")
+print(f"------------------------")
