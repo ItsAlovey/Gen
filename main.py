@@ -8,6 +8,13 @@ numOfCharacters = input("How many characters do you want to generate: ") #asking
 int(numOfCharacters) #converting the input to an integer
 i = 0 # initializing the counter variable
 
+
+# Variables for average calculations
+totalAge = 0 # variable to store the total age of all characters
+totalHeight = 0 # variable to store the total height of all characters
+totalWeight = 0 # variable to store the total weight of all characters
+
+
 while i < int(numOfCharacters):
 
     #Variables
@@ -154,21 +161,32 @@ while i < int(numOfCharacters):
     personalityTypes = ["ISTJ", "ISFJ","INFJ","INTJ","ISTP","ISFP","INFP","INTP","ESTP","ESFP","ENFP","ENTP","ESTJ","ESFJ","ENFJ","ENTJ"]
     personalityType = personalityTypes[secrets.randbelow(len(personalityTypes))] #picking a random personality type
 
+    #Counters for average calculations
+    totalAge += age
+    totalHeight += height
+    totalWeight += weight
+
     #Output
-    print("\n")
-    print(f"✨ Character Profile: " + str(i + 1) + "✨")
-    print(f"------------------------")
-    print(f"Name: {firstName} {lastName}")
-    print(f"Sex: {sex}")
-    print(f"Age: {age} (Born on {month} {day}, {birthYear})")
-    print(f"From: {state}, {country}")
-    print(f"Height: {height}cm | Weight: {weight}kg")
-    print(f"Hair: {hairColor} | Eyes: {eyeColor}")
-    print(f"Personality Type: {personalityType}")
-    print(f"------------------------")
+    print("\n") # printing a new line for better readability
+    print(f"✨ Character Profile: " + str(i + 1) + "✨") # printing the character profile number
+    print(f"------------------------") # printing a separator line
+    # printing the character profile details
+    print(f"Name: {firstName} {lastName}") # printing the full name of the character
+    print(f"Sex: {sex}") # printing the sex of the character
+    print(f"Age: {age} (Born on {month} {day}, {birthYear})") # printing the age and birth date of the character
+    print(f"From: {state}, {country}") # printing the state and country of the character
+    print(f"Height: {height}cm | Weight: {weight}kg") # printing the height and weight of the character
+    print(f"Hair: {hairColor} | Eyes: {eyeColor}") # printing the hair and eye color of the character
+    print(f"Personality Type: {personalityType}") # printing the personality type of the character
+    print(f"------------------------") # printing a separator line
 
     if i == int(numOfCharacters): # check if the number of characters generated is equal to the number of characters requested
         break # exit the loop if the condition is met
     i += 1 # # increment the counter variable to generate the next character
-# # End of the while loop
 
+print("\n✨ Character Averages ✨")
+print("------------------------") 
+print(f"Average Age: {totalAge / int(numOfCharacters):.2f} years") # calculating the average age to the second decimal place
+print(f"Average Height: {totalHeight / int(numOfCharacters):.2f}cm") # calculating the average height to the second decimal place
+print(f"Average Weight: {totalWeight / int(numOfCharacters):.2f}kg") # calculating the average weight to the second decimal place
+print("------------------------")
