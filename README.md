@@ -1,5 +1,8 @@
 Character Generator
 
+Current Version
+1.5.4 – This just adds a current version view to the readme file allowing for cleaner communication in the future. 
+
 Overview
 
 This Python script generates random character profiles with detailed attributes such as name, age, gender, location, physical features, and personality type. It supports bulk generation and outputs data in CSV format, suitable for further analysis or machine learning projects.

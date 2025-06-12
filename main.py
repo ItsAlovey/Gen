@@ -4,7 +4,7 @@
 #              profiles based on user input.
 # Author: Alovey
 # Date: 2025-06-12
-# Version: 1.5.2
+# Version: 1.5.4
 # License: MIT License
 # ===================================================
 
