@@ -4,7 +4,7 @@
 #              profiles based on user input.
 # Author: Alovey
 # Date: 2025-06-12
-# Version: 1.5.4
+# Version: 1.6
 # License: MIT License
 # ===================================================
 
@@ -14,18 +14,22 @@ import datetime
 import csv
 
 # --- Prompt User for Number of Characters ---
-numOfCharacters = input("How many characters do you want to generate: ") 
+total_characters = input("How many characters do you want to generate: ") 
 
 # --- Initialize Counters and Totals ---
 character_count = 0 
-totalMale = 0
-totalFemale = 0
-totalYears = 0
-totalAge = 0
-totalHeight = 0 
-totalWeight = 0 
-youngestAge = 100 
-oldestAge = 0
+total_male = 0
+total_female = 0
+total_years = 0
+total_age = 0
+total_height = 0 
+total_weight = 0 
+youngest_age = 100 
+oldest_age = 0
+
+
+start_time = datetime.datetime.now()
+
 
 # --- Open Output File for Writing ---
 with open('output/output.csv', 'w', newline='') as output:
@@ -36,34 +40,34 @@ with open('output/output.csv', 'w', newline='') as output:
         "Hair Color", "Eye Color", "Personality Type"])
 
     # --- Character Generation Loop ---
-    while character_count < int(numOfCharacters):
+    while character_count < int(total_characters):
 
         #Variables for Character Generation
         gender = secrets.SystemRandom().randint(0, 1) 
 
-        currentYear = datetime.datetime.now().year  
-        currentMonth = datetime.datetime.now().month  
-        currentDay = datetime.datetime.now().day  
+        current_year = datetime.datetime.now().year  
+        current_month = datetime.datetime.now().month  
+        current_day = datetime.datetime.now().day  
 
         age = secrets.SystemRandom().randint(13, 80) 
-        birthYear = currentYear - age  
+        birth_year = current_year - age  
         birth_month_number = secrets.SystemRandom().randint(1, 12) 
 
         # --- Determine Gender and Select First Name ---
         if gender == 0: 
-            nameList = "data/male_names.txt"
+            name_list = "data/male_names.txt"
             sex = "Male" #
         elif gender == 1:
-            nameList = "data/female_names.txt"
+            name_list = "data/female_names.txt"
             sex = "Female" 
-        with open(nameList) as f: 
+        with open(name_list) as f: 
             lines = f.readlines() 
-            firstName = lines[secrets.randbelow(len(lines))].strip() 
+            first_name = lines[secrets.randbelow(len(lines))].strip() 
 
         # --- Select Last Name ---
         with open('data/last_names.txt') as f: 
             lines = f.readlines() 
-            lastName = lines[secrets.randbelow(len(lines))].strip()  
+            last_name = lines[secrets.randbelow(len(lines))].strip()  
 
         # --- Generate Birth Month and Day ---
         if birth_month_number == 1:
@@ -72,7 +76,7 @@ with open('output/output.csv', 'w', newline='') as output:
 
         elif birth_month_number == 2:
             month = "February"   
-            if birthYear % 4 == 0 and (birthYear % 100 != 0 or birthYear % 400 == 0):
+            if birth_year % 4 == 0 and (birth_year % 100 != 0 or birth_year % 400 == 0):
                 days = 29 
             else:
                 days = 28 
@@ -120,9 +124,9 @@ with open('output/output.csv', 'w', newline='') as output:
         # --- Adjust Age Based on Current Date ---
         birth_day = secrets.SystemRandom().randint(1, days)
 
-        if birth_month_number > currentMonth:
+        if birth_month_number > current_month:
             age -= 1 
-        elif birth_month_number == currentMonth and birth_day > currentDay:
+        elif birth_month_number == current_month and birth_day > current_day:
             age -= 1 
 
         # --- Select Country and Corresponding State/Province ---
@@ -131,7 +135,7 @@ with open('output/output.csv', 'w', newline='') as output:
         country = lines[secrets.randbelow(len(lines))].strip()
 
         # --- Define Regional State/Province Lists ---
-        usStates = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
+        us_states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
            "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
            "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
            "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico",
@@ -139,35 +143,35 @@ with open('output/output.csv', 'w', newline='') as output:
            "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah",
            "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 
-        ukCountries = ["England", "Scotland", "Wales", "Northern Ireland"]
+        uk_countries = ["England", "Scotland", "Wales", "Northern Ireland"]
 
-        caProvince = ["Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador",
+        ca_province = ["Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador",
             "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"]
 
-        asStates = ["New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia",
+        as_states = ["New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia",
           "Australian Capital Territory", "Northern Territory"]
 
-        nzStates = ["Auckland", "Bay of Plenty", "Canterbury", "Gisborne", "Hawke's Bay", "Manawatu-Wanganui",
+        nz_states = ["Auckland", "Bay of Plenty", "Canterbury", "Gisborne", "Hawke's Bay", "Manawatu-Wanganui",
           "Marlborough", "Nelson", "Northland", "Otago", "Southland", "Taranaki", "Waikato", "Wellington"]
 
-        ieStates = ["Carlow", "Cavan", "Clare", "Cork", "Donegal", "Dublin", "Galway", "Kerry", "Kildare",
+        ie_states = ["Carlow", "Cavan", "Clare", "Cork", "Donegal", "Dublin", "Galway", "Kerry", "Kildare",
            "Kilkenny", "Laois", "Leitrim", "Limerick", "Longford", "Louth", "Mayo", "Meath",
               "Monaghan", "Offaly", "Roscommon", "Sligo", "Tipperary", "Waterford", "Westmeath",
               "Wexford", "Wicklow"]
 
         # --- Determine Region Based on Country Selection ---
         if country == "United States":
-            state = usStates[secrets.randbelow(len(usStates))]
+            state = us_states[secrets.randbelow(len(us_states))]
         elif country == "United Kingdom":
-            state = ukCountries[secrets.randbelow(len(ukCountries))] 
+            state = uk_countries[secrets.randbelow(len(uk_countries))] 
         elif country == "Canada":
-            state = caProvince[secrets.randbelow(len(caProvince))]
+            state = ca_province[secrets.randbelow(len(ca_province))]
         elif country == "Australia":
-            state = asStates[secrets.randbelow(len(asStates))] 
+            state = as_states[secrets.randbelow(len(as_states))] 
         elif country == "New Zealand":
-            state = nzStates[secrets.randbelow(len(nzStates))] 
+            state = nz_states[secrets.randbelow(len(nz_states))] 
         elif country == "Ireland":
-            state = ieStates[secrets.randbelow(len(ieStates))] 
+            state = ie_states[secrets.randbelow(len(ie_states))] 
         else:
             state = "N/A" 
 
@@ -181,48 +185,48 @@ with open('output/output.csv', 'w', newline='') as output:
             weight = secrets.SystemRandom().randint(50, 70)
 
         # --- Randomly Select Hair and Eye Color ---
-        hairColors = [ "Blond", "Dark Blond", "Medium Brown", "Dark Brown", "Black", "Auburn", "Red", "Gray", "White"]
-        hairColor = hairColors[secrets.randbelow(len(hairColors))]
+        hair_colors = [ "Blond", "Dark Blond", "Medium Brown", "Dark Brown", "Black", "Auburn", "Red", "Gray", "White"]
+        hair_color = hair_colors[secrets.randbelow(len(hair_colors))]
  
-        eyeColors = ["Brown", "Blue", "Green", "Hazel", "Gray", "Amber"]
-        eyeColor = eyeColors[secrets.randbelow(len(eyeColors))]
+        eye_colors = ["Brown", "Blue", "Green", "Hazel", "Gray", "Amber"]
+        eye_color = eye_colors[secrets.randbelow(len(eye_colors))]
 
         # --- Randomly Assign Personality Type ---
-        personalityTypes = ["ISTJ", "ISFJ","INFJ","INTJ","ISTP","ISFP","INFP","INTP","ESTP","ESFP","ENFP","ENTP","ESTJ","ESFJ","ENFJ","ENTJ"]
-        personalityType = personalityTypes[secrets.randbelow(len(personalityTypes))]
+        personality_types = ["ISTJ", "ISFJ","INFJ","INTJ","ISTP","ISFP","INFP","INTP","ESTP","ESFP","ENFP","ENTP","ESTJ","ESFJ","ENFJ","ENTJ"]
+        personality_type = personality_types[secrets.randbelow(len(personality_types))]
 
         # --- Update Totals for Statistics ---
         if sex == "Male":
-            totalMale += 1 
+            total_male += 1 
         elif sex =="Female":
-            totalFemale += 1 
+            total_female += 1 
 
-        totalYears += birthYear 
-        totalAge += age 
-        totalHeight += height 
-        totalWeight += weight 
+        total_years += birth_year 
+        total_age += age 
+        total_height += height 
+        total_weight += weight 
 
-        if age < youngestAge: 
-            youngestAge = age 
+        if age < youngest_age: 
+            youngest_age = age 
 
-        if age > oldestAge:
-            oldestAge = age 
+        if age > oldest_age:
+            oldest_age = age 
 
 
         # --- Write Character Profile to Output File ---
         writer.writerow([
-            firstName,
-            lastName,
+            first_name,
+            last_name,
             sex,
             age,
-            f"{month} {birth_day}, {birthYear}",
+            f"{month} {birth_day}, {birth_year}",
             country,
             state,
             height,
             weight,
-            hairColor,
-            eyeColor,
-            personalityType
+            hair_color,
+            eye_color,
+            personality_type
         ])
 
 
@@ -230,20 +234,24 @@ with open('output/output.csv', 'w', newline='') as output:
     # --- End of character generation loop ---
 
     # --- Write Summary Statistics if More Than One Character ---
-    if numOfCharacters == "1":
+    if total_characters == "1":
         print(f"\n")
     else:
         print(f"\n Character Averages ")
         print(f"------------------------") 
-        print(f"Total Characters: {numOfCharacters}") 
-        print(f"Males vs Females: {totalMale} vs {totalFemale}") 
-        print(f"Average Birth Year: {totalYears / int(numOfCharacters):.0f}") 
-        print(f"Average Age: {totalAge / int(numOfCharacters):.2f} years") 
-        print(f"Average Height: {totalHeight / int(numOfCharacters):.2f}cm") 
-        print(f"Average Weight: {totalWeight / int(numOfCharacters):.2f}kg")
-        print(f"Youngest Age: {youngestAge} years")
-        print(f"Oldest Age: {oldestAge} years")
+        print(f"Total Characters: {total_characters}") 
+        print(f"Males vs Females: {total_male} vs {total_female}") 
+        print(f"Average Birth Year: {total_years / int(total_characters):.0f}") 
+        print(f"Average Age: {total_age / int(total_characters):.2f} years") 
+        print(f"Average Height: {total_height / int(total_characters):.2f}cm") 
+        print(f"Average Weight: {total_weight / int(total_characters):.2f}kg")
+        print(f"Youngest Age: {youngest_age} years")
+        print(f"Oldest Age: {oldest_age} years")
         print("------------------------")
 
 # --- Script Complete ---
+end_time = datetime.datetime.now()
+run_time = end_time - start_time
+
 print(f"\nCharacter generation complete. Check output.csv for the results.\n")
+print(f"Runtime: {run_time.total_seconds():.2f} seconds")

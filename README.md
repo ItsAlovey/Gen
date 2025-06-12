@@ -1,7 +1,7 @@
 Character Generator
 
 Current Version
-1.5.4 – This just adds a current version view to the readme file allowing for cleaner communication in the future. 
+1.6 I changed all of my variables to snake case for better readability. I also added a runtime counter to track how long it takes to generate a dataset. 
 
 Overview
 
