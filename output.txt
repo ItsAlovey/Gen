@@ -1,0 +1,65 @@
+
+ Character Profile: 1 
+------------------------
+Name: Muhammad Gill
+Sex: Male
+Age: 19 (Born on January 1, 2006)
+From: Tasmania, Australia
+Height: 170cm | Weight: 76kg
+Hair: Gray | Eyes: Brown
+Personality Type: ESTJ
+------------------------
+
+ Character Profile: 2 
+------------------------
+Name: Alyssa Hawkins
+Sex: Female
+Age: 22 (Born on February 8, 2003)
+From: Waterford, Ireland
+Height: 173cm | Weight: 59kg
+Hair: Black | Eyes: Gray
+Personality Type: ESFJ
+------------------------
+
+ Character Profile: 3 
+------------------------
+Name: Ivory Banks
+Sex: Female
+Age: 51 (Born on September 24, 1973)
+From: England, United Kingdom
+Height: 157cm | Weight: 68kg
+Hair: Black | Eyes: Hazel
+Personality Type: ISFP
+------------------------
+
+ Character Profile: 4 
+------------------------
+Name: Ambrose Mccarty
+Sex: Male
+Age: 20 (Born on March 9, 2005)
+From: Offaly, Ireland
+Height: 169cm | Weight: 65kg
+Hair: White | Eyes: Amber
+Personality Type: ENFP
+------------------------
+
+ Character Profile: 5 
+------------------------
+Name: Harry Lambert
+Sex: Male
+Age: 68 (Born on February 16, 1957)
+From: Wexford, Ireland
+Height: 183cm | Weight: 68kg
+Hair: Dark Blond | Eyes: Gray
+Personality Type: ENFJ
+------------------------
+
+ Character Averages 
+------------------------
+Total Characters: 5
+Males vs Females: 3 vs 2
+Average Birth Year: 1989
+Average Age: 36.00 years
+Average Height: 170.40cm
+Average Weight: 67.20kg
+------------------------
