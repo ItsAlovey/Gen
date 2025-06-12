@@ -10,6 +10,9 @@ i = 0 # initializing the counter variable
 
 
 # Variables for average calculations
+totalMale = 0 # variable to store the total number male characters
+totalFemale = 0 # variable to store the total number of female characters
+totalYears = 0 # variable to store the total years of all characters
 totalAge = 0 # variable to store the total age of all characters
 totalHeight = 0 # variable to store the total height of all characters
 totalWeight = 0 # variable to store the total weight of all characters
@@ -162,6 +165,15 @@ while i < int(numOfCharacters):
     personalityType = personalityTypes[secrets.randbelow(len(personalityTypes))] #picking a random personality type
 
     #Counters for average calculations
+    if sex == "Male":
+        totalMale += 1 # incrementing the total number of male characters
+    elif sex =="Female":
+        totalFemale += 1 # incrementing the total number of female characters
+    else:
+        totalMale == "N/A"
+        totalFemale == "N/A"
+
+    totalYears += birthYear # adding the birth year to the total years
     totalAge += age
     totalHeight += height
     totalWeight += weight
@@ -186,6 +198,9 @@ while i < int(numOfCharacters):
 
 print("\n✨ Character Averages ✨")
 print("------------------------") 
+print(f"Total Characters: {numOfCharacters}") # printing the total number of characters generated
+print(f"Males vs Females: {totalMale} vs {totalFemale}") # printing the total number of females and male characters
+print(f"Average Birth Year: {totalYears / int(numOfCharacters):.0f}") # calculating the average birth year to the nearest whole number
 print(f"Average Age: {totalAge / int(numOfCharacters):.2f} years") # calculating the average age to the second decimal place
 print(f"Average Height: {totalHeight / int(numOfCharacters):.2f}cm") # calculating the average height to the second decimal place
 print(f"Average Weight: {totalWeight / int(numOfCharacters):.2f}kg") # calculating the average weight to the second decimal place
