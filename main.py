@@ -4,7 +4,7 @@
 #              profiles based on user input.
 # Author: Alovey
 # Date: 2025-06-12
-# Version: 1.5
+# Version: 1.5.2
 # License: MIT License
 # ===================================================
 
@@ -28,7 +28,7 @@ youngestAge = 100
 oldestAge = 0
 
 # --- Open Output File for Writing ---
-with open('output.csv', 'w', newline='') as output:
+with open('output/output.csv', 'w', newline='') as output:
     writer = csv.writer(output)
     writer.writerow([
         "First Name", "Last Name", "Sex", "Age", "Birth Date", 
@@ -51,17 +51,17 @@ with open('output.csv', 'w', newline='') as output:
 
         # --- Determine Gender and Select First Name ---
         if gender == 0: 
-            nameList = "male_names.txt"
+            nameList = "data/male_names.txt"
             sex = "Male" #
         elif gender == 1:
-            nameList = "female_names.txt"
+            nameList = "data/female_names.txt"
             sex = "Female" 
         with open(nameList) as f: 
             lines = f.readlines() 
             firstName = lines[secrets.randbelow(len(lines))].strip() 
 
         # --- Select Last Name ---
-        with open('last_names.txt') as f: 
+        with open('data/last_names.txt') as f: 
             lines = f.readlines() 
             lastName = lines[secrets.randbelow(len(lines))].strip()  
 
@@ -126,7 +126,7 @@ with open('output.csv', 'w', newline='') as output:
             age -= 1 
 
         # --- Select Country and Corresponding State/Province ---
-        with open('countries.txt') as f:
+        with open('data/countries.txt') as f:
             lines = f.readlines()
         country = lines[secrets.randbelow(len(lines))].strip()
 

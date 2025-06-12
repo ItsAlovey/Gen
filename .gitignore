@@ -1,1 +1,20 @@
-output.csv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Output files (you don't want to track generated .csv files)
+*.csv
+output/
+*.txt
+
+# Virtual environments
+venv/
+.env/
+
+# VSCode settings (if you use it)
+.vscode/
+
+# Mac and Windows file system cruft
+.DS_Store
+Thumbs.db

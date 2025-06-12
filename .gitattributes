@@ -1,2 +1,15 @@
-# Auto detect text files and perform LF normalization
+# Treat Python and text files as text
+*.py text
+*.txt text
+*.csv text
+
+# Normalize line endings
 * text=auto
+
+# Handle shell scripts or Unix tools
+*.sh text eol=lf
+
+# Mark Jupyter notebooks if you ever use them
+*.ipynb text
+
+# Keep consistent behavior across platforms
