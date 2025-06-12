@@ -1,230 +1,67 @@
 
  Character Profile: 1 
 ------------------------
-Name: Austin Copeland
-Sex: Male
-Age: 70 (Born on August 23, 1954)
-From: Northern Ireland, United Kingdom
-Height: 173cm | Weight: 80kg
-Hair: Dark Blond | Eyes: Hazel
-Personality Type: ISTJ
+Name: Eleanor Jimenez
+Sex: Female
+Age: 36 (Born on May 27, 1989)
+From: Newfoundland and Labrador, Canada
+Height: 175cm | Weight: 68kg
+Hair: Black | Eyes: Green
+Personality Type: ESTJ
 ------------------------
 
  Character Profile: 2 
 ------------------------
-Name: Emilio Moon
+Name: Remi Cardenas
 Sex: Male
-Age: 37 (Born on January 30, 1988)
-From: Wales, United Kingdom
-Height: 183cm | Weight: 64kg
-Hair: White | Eyes: Blue
-Personality Type: INFP
-------------------------
-
- Character Profile: 3 
-------------------------
-Name: Tru Cox
-Sex: Female
-Age: 68 (Born on October 16, 1956)
-From: Dublin, Ireland
-Height: 168cm | Weight: 55kg
+Age: 35 (Born on December 20, 1989)
+From: North Dakota, United States
+Height: 178cm | Weight: 75kg
 Hair: Dark Brown | Eyes: Hazel
 Personality Type: ISTP
 ------------------------
 
+ Character Profile: 3 
+------------------------
+Name: Jaxon Lang
+Sex: Male
+Age: 33 (Born on December 22, 1991)
+From: Australian Capital Territory, Australia
+Height: 166cm | Weight: 68kg
+Hair: Black | Eyes: Amber
+Personality Type: ESTJ
+------------------------
+
  Character Profile: 4 
 ------------------------
-Name: Royalty Austin
+Name: Melanie Hood
 Sex: Female
-Age: 32 (Born on September 19, 1992)
-From: England, United Kingdom
-Height: 167cm | Weight: 55kg
-Hair: Red | Eyes: Green
-Personality Type: INFJ
-------------------------
-
- Character Profile: 5 
-------------------------
-Name: Koa Barnett
-Sex: Male
-Age: 56 (Born on March 31, 1969)
-From: Kilkenny, Ireland
-Height: 183cm | Weight: 70kg
-Hair: Blond | Eyes: Green
-Personality Type: ISFJ
-------------------------
-
- Character Profile: 6 
-------------------------
-Name: Linda Price
-Sex: Female
-Age: 54 (Born on August 10, 1970)
-From: Hawke's Bay, New Zealand
-Height: 170cm | Weight: 60kg
-Hair: Medium Brown | Eyes: Hazel
-Personality Type: ENFP
-------------------------
-
- Character Profile: 7 
-------------------------
-Name: Raiden Walker
-Sex: Male
-Age: 19 (Born on September 23, 2005)
-From: Meath, Ireland
-Height: 178cm | Weight: 70kg
-Hair: Black | Eyes: Brown
-Personality Type: ENTJ
-------------------------
-
- Character Profile: 8 
-------------------------
-Name: Abram Woodard
-Sex: Male
-Age: 49 (Born on September 7, 1975)
-From: Auckland, New Zealand
-Height: 177cm | Weight: 65kg
+Age: 56 (Born on June 24, 1968)
+From: Idaho, United States
+Height: 159cm | Weight: 68kg
 Hair: Dark Blond | Eyes: Hazel
 Personality Type: ISTJ
 ------------------------
 
- Character Profile: 9 
+ Character Profile: 5 
 ------------------------
-Name: Sullivan Foreman
-Sex: Male
-Age: 30 (Born on June 7, 1995)
-From: Longford, Ireland
-Height: 171cm | Weight: 77kg
-Hair: Black | Eyes: Hazel
-Personality Type: INFJ
-------------------------
-
- Character Profile: 10 
-------------------------
-Name: Kataleya Carson
+Name: Luna Cole
 Sex: Female
-Age: 72 (Born on December 31, 1952)
-From: Wellington, New Zealand
-Height: 171cm | Weight: 54kg
-Hair: Dark Brown | Eyes: Gray
-Personality Type: INFP
-------------------------
-
- Character Profile: 11 
-------------------------
-Name: Dior Merritt
-Sex: Female
-Age: 13 (Born on October 8, 2011)
-From: Australian Capital Territory, Australia
-Height: 161cm | Weight: 67kg
-Hair: Blond | Eyes: Gray
-Personality Type: INTJ
-------------------------
-
- Character Profile: 12 
-------------------------
-Name: Grayson Anderson
-Sex: Male
-Age: 18 (Born on December 1, 2006)
-From: Western Australia, Australia
-Height: 183cm | Weight: 75kg
-Hair: Medium Brown | Eyes: Green
-Personality Type: ESTJ
-------------------------
-
- Character Profile: 13 
-------------------------
-Name: Huxley Chang
-Sex: Male
-Age: 14 (Born on January 26, 2011)
-From: Manawatu-Wanganui, New Zealand
-Height: 176cm | Weight: 60kg
-Hair: White | Eyes: Hazel
-Personality Type: ISFP
-------------------------
-
- Character Profile: 14 
-------------------------
-Name: Mark Anthony
-Sex: Male
-Age: 60 (Born on June 19, 1964)
-From: Manitoba, Canada
-Height: 177cm | Weight: 66kg
-Hair: Medium Brown | Eyes: Hazel
-Personality Type: ESFJ
-------------------------
-
- Character Profile: 15 
-------------------------
-Name: Deacon Hansen
-Sex: Male
-Age: 36 (Born on November 8, 1988)
-From: Dublin, Ireland
-Height: 180cm | Weight: 68kg
-Hair: Red | Eyes: Brown
+Age: 35 (Born on August 21, 1989)
+From: South Australia, Australia
+Height: 169cm | Weight: 69kg
+Hair: Auburn | Eyes: Brown
 Personality Type: ENFJ
-------------------------
-
- Character Profile: 16 
-------------------------
-Name: Skye Gay
-Sex: Female
-Age: 71 (Born on July 31, 1953)
-From: Saskatchewan, Canada
-Height: 167cm | Weight: 59kg
-Hair: White | Eyes: Green
-Personality Type: ENTP
-------------------------
-
- Character Profile: 17 
-------------------------
-Name: Braylen Best
-Sex: Male
-Age: 26 (Born on November 9, 1998)
-From: Minnesota, United States
-Height: 165cm | Weight: 75kg
-Hair: Medium Brown | Eyes: Hazel
-Personality Type: ISTP
-------------------------
-
- Character Profile: 18 
-------------------------
-Name: Presley Sims
-Sex: Female
-Age: 23 (Born on February 26, 2002)
-From: British Columbia, Canada
-Height: 156cm | Weight: 69kg
-Hair: Blond | Eyes: Brown
-Personality Type: ESTP
-------------------------
-
- Character Profile: 19 
-------------------------
-Name: Kathryn Higgins
-Sex: Female
-Age: 61 (Born on August 27, 1963)
-From: Otago, New Zealand
-Height: 168cm | Weight: 50kg
-Hair: Dark Blond | Eyes: Brown
-Personality Type: ENFP
-------------------------
-
- Character Profile: 20 
-------------------------
-Name: Francesca Price
-Sex: Female
-Age: 36 (Born on January 4, 1989)
-From: Auckland, New Zealand
-Height: 165cm | Weight: 58kg
-Hair: Medium Brown | Eyes: Green
-Personality Type: ESFP
 ------------------------
 
  Character Averages 
 ------------------------
-Total Characters: 20
-Males vs Females: 11 vs 9
-Average Birth Year: 1982
-Average Age: 42.25 years
-Average Height: 171.95cm
-Average Weight: 64.85kg
+Total Characters: 5
+Males vs Females: 2 vs 3
+Average Birth Year: 1985
+Average Age: 39.00 years
+Average Height: 169.40cm
+Average Weight: 69.60kg
+Youngest Age: 33 years
+Oldest Age: 56 years
 ------------------------
