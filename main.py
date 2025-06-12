@@ -11,6 +11,7 @@
 # --- Import Required Modules ---
 import secrets
 import datetime
+import csv
 
 # --- Prompt User for Number of Characters ---
 numOfCharacters = input("How many characters do you want to generate: ") 
@@ -27,7 +28,12 @@ youngestAge = 100
 oldestAge = 0
 
 # --- Open Output File for Writing ---
-with open('output.txt', 'w') as output:
+with open('output.csv', 'w', newline='') as output:
+    writer = csv.writer(output)
+    writer.writerow([
+        "First Name", "Last Name", "Sex", "Age", "Birth Date", 
+        "Country", "Region", "Height (cm)", "Weight (kg)", 
+        "Hair Color", "Eye Color", "Personality Type"])
 
     # --- Character Generation Loop ---
     while character_count < int(numOfCharacters):
@@ -204,16 +210,20 @@ with open('output.txt', 'w') as output:
 
 
         # --- Write Character Profile to Output File ---
-        output.write(f"\n Character Profile: {character_count + 1} \n")
-        output.write(f"------------------------\n") 
-        output.write(f"Name: {firstName} {lastName}\n") 
-        output.write(f"Sex: {sex}\n") 
-        output.write(f"Age: {age} (Born on {month} {birth_day}, {birthYear})\n") 
-        output.write(f"From: {state}, {country}\n")
-        output.write(f"Height: {height}cm | Weight: {weight}kg\n") 
-        output.write(f"Hair: {hairColor} | Eyes: {eyeColor}\n")
-        output.write(f"Personality Type: {personalityType}\n") 
-        output.write(f"------------------------\n")
+        writer.writerow([
+            firstName,
+            lastName,
+            sex,
+            age,
+            f"{month} {birth_day}, {birthYear}",
+            country,
+            state,
+            height,
+            weight,
+            hairColor,
+            eyeColor,
+            personalityType
+        ])
 
 
         character_count += 1 
@@ -221,19 +231,19 @@ with open('output.txt', 'w') as output:
 
     # --- Write Summary Statistics if More Than One Character ---
     if numOfCharacters == "1":
-        output.write(f"\n")
+        print(f"\n")
     else:
-        output.write(f"\n Character Averages ")
-        output.write(f"\n------------------------") 
-        output.write(f"\nTotal Characters: {numOfCharacters}") 
-        output.write(f"\nMales vs Females: {totalMale} vs {totalFemale}") 
-        output.write(f"\nAverage Birth Year: {totalYears / int(numOfCharacters):.0f}") 
-        output.write(f"\nAverage Age: {totalAge / int(numOfCharacters):.2f} years") 
-        output.write(f"\nAverage Height: {totalHeight / int(numOfCharacters):.2f}cm") 
-        output.write(f"\nAverage Weight: {totalWeight / int(numOfCharacters):.2f}kg")
-        output.write(f"\nYoungest Age: {youngestAge} years")
-        output.write(f"\nOldest Age: {oldestAge} years")
-        output.write("\n------------------------")
+        print(f"\n Character Averages ")
+        print(f"------------------------") 
+        print(f"Total Characters: {numOfCharacters}") 
+        print(f"Males vs Females: {totalMale} vs {totalFemale}") 
+        print(f"Average Birth Year: {totalYears / int(numOfCharacters):.0f}") 
+        print(f"Average Age: {totalAge / int(numOfCharacters):.2f} years") 
+        print(f"Average Height: {totalHeight / int(numOfCharacters):.2f}cm") 
+        print(f"Average Weight: {totalWeight / int(numOfCharacters):.2f}kg")
+        print(f"Youngest Age: {youngestAge} years")
+        print(f"Oldest Age: {oldestAge} years")
+        print("------------------------")
 
 # --- Script Complete ---
-print(f"\nCharacter generation complete. Check output.txt for the results.\n")
+print(f"\nCharacter generation complete. Check output.csv for the results.\n")
