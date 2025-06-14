@@ -1,39 +1,50 @@
-Character Generator
+**Character Generator**
 
-Current Version
-1.6 I changed all of my variables to snake case for better readability. I also added a runtime counter to track how long it takes to generate a dataset. 
+**Version 1.7 Update**
 
-Overview
+This update enhances character realism by incorporating age-specific height and weight ranges, as well as realistic distributions for eye color, hair color, and personality types. Additionally, it introduces input validation and confirmation for large dataset sizes, thereby improving usability and preparing the codebase for future expansion.
 
-This Python script generates random character profiles with detailed attributes such as name, age, gender, location, physical features, and personality type. It supports bulk generation and outputs data in CSV format, suitable for further analysis or machine learning projects.
+**Overview**
 
-Features
-	•	Generates multiple characters based on user input
-	•	Randomized attributes including names, birth dates, locations, height, weight, hair and eye color, and personality types
-	•	Outputs character data to a structured CSV file for easy import into data analysis tools
-	•	Provides summary statistics including averages and demographics
-	•	Organized with external data files for names, countries, and regions
+This Python script generates random character profiles with comprehensive attributes, including name, age, gender, location, physical features, and personality types. It facilitates bulk generation and outputs data in CSV format, making it suitable for further analysis or machine learning endeavors.
 
-Getting Started
-	1.	Clone the repository
-	2.	Ensure data files are in the data/ folder (male_names.txt, female_names.txt, last_names.txt, countries.txt)
-	3.	Run main.py and enter the number of characters to generate
-	4.	Generated profiles will be saved in output/output.csv
+**Key Features**
 
-Requirements
-	•	Python 3.x
-	•	No external libraries needed beyond standard Python modules
+* **Character Generation:** The script generates multiple characters based on user input.
+* **Randomized Attributes:** It incorporates randomized attributes such as names, birth dates, locations, height, weight, hair and eye color, and personality types.
+* **CSV Output:** The generated character data is exported to a structured CSV file, facilitating easy import into data analysis tools.
+* **Summary Statistics:** The script provides summary statistics, including averages and demographics.
+* **External Data Files:** The script organizes the data with external data files for names, countries, and regions.
 
-Contributing
+**Getting Started**
 
-Contributions are welcome! If you’d like to improve the project:
-	•	Fork the repository
-	•	Create a new branch for your feature or bug fix
-	•	Make your changes with clear, concise commits
-	•	Submit a pull request describing your changes
+1. Clone the repository.
+2. Ensure that the data files (male_names.txt, female_names.txt, last_names.txt, countries.txt) are located within the data/ folder.
+3. Run the main.py script and specify the desired number of characters to generate.
+4. Generated profiles will be saved in the output/output.csv file.
 
-Please ensure your code is well-documented and tested. For major changes, please open an issue first to discuss your plans.
+**Requirements**
 
-License
+* Python 3.x
+* No external libraries are required beyond standard Python modules.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+**Contributing**
+
+Contributions are welcome! If you wish to enhance the project, please follow these steps:
+
+* Fork the repository.
+* Create a new branch dedicated to your feature or bug fix.
+* Implement your changes with clear and concise commits.
+* Submit a pull request describing your changes.
+
+**Code Documentation and Testing**
+
+Please ensure that your code is well-documented and thoroughly tested. For significant changes, it is advisable to open an issue prior to discussing your plans.
+
+**License**
+
+This project is licensed under the MIT License. For further details, please refer to the LICENSE file.
+
+
+
+

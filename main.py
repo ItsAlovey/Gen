@@ -4,7 +4,7 @@
 #              profiles based on user input.
 # Author: Alovey
 # Date: 2025-06-12
-# Version: 1.6
+# Version: 1.7
 # License: MIT License
 # ===================================================
 
@@ -14,7 +14,30 @@ import datetime
 import csv
 
 # --- Prompt User for Number of Characters ---
-total_characters = input("How many characters do you want to generate: ") 
+
+while True:
+    try:
+        total_characters = int(input("How many characters would you like to generate: "))
+        
+        if total_characters <= 0:
+            print("\nPlease enter a positive number.")
+            continue
+
+        if total_characters > 1_000_000:
+            user_check = input("Warning! You entered a very large number. Are you sure? (Y/N): ").strip().lower()
+            if user_check == "y":
+                break
+            elif user_check == "n":
+                print("Okay, please re-enter your number.\n")
+                continue
+            else:
+                print("Invalid response. Please enter a new number.\n")
+                continue
+        else:
+            break
+
+    except ValueError:
+        print("\nInvalid input. Please enter a valid number.")
 
 # --- Initialize Counters and Totals ---
 character_count = 0 
@@ -177,30 +200,103 @@ with open('output/output.csv', 'w', newline='') as output:
 
        # --- Generate Height and Weight Based on Gender ---
         if sex == "Male":
-            height = secrets.SystemRandom().randint(165, 185)
-            weight = secrets.SystemRandom().randint(60, 80)
 
+            if age in [12,13]:
+                height = secrets.SystemRandom().randint(152,163)
+                weight = secrets.SystemRandom().randint(41,48)
+            elif age in [14,15]:
+                height = secrets.SystemRandom().randint(157,175)
+                weight = secrets.SystemRandom().randint(50,59)
+            elif age in [16,17]:
+                height = secrets.SystemRandom().randint(165,180)
+                weight = secrets.SystemRandom().randint(56,66)
+            elif age in [18,19]:
+                height = secrets.SystemRandom().randint(168,183)
+                weight = secrets.SystemRandom().randint(61,73)
+            elif age >=20:
+                height = secrets.SystemRandom().randint(168,191)
+                weight = secrets.SystemRandom().randint(68,82)
+
+            total_male += 1
+            
         elif sex =="Female":
-            height = secrets.SystemRandom().randint(155, 175)
-            weight = secrets.SystemRandom().randint(50, 70)
+            if age in [12,13]:
+                height = secrets.SystemRandom().randint(140,152)
+                weight = secrets.SystemRandom().randint(39,46)
+            elif age in [14,15]:
+                height = secrets.SystemRandom().randint(152,160)
+                weight = secrets.SystemRandom().randint(46,53)
+            elif age in [16,17]:
+                height = secrets.SystemRandom().randint(160,165)
+                weight = secrets.SystemRandom().randint(53,59)
+            elif age in [18,19]:
+                height = secrets.SystemRandom().randint(160,175)
+                weight = secrets.SystemRandom().randint(54,64)
+            elif age >=20:
+                height = secrets.SystemRandom().randint(163,180)
+                weight = secrets.SystemRandom().randint(59,73)
+            
+            total_female += 1
 
-        # --- Randomly Select Hair and Eye Color ---
-        hair_colors = [ "Blond", "Dark Blond", "Medium Brown", "Dark Brown", "Black", "Auburn", "Red", "Gray", "White"]
-        hair_color = hair_colors[secrets.randbelow(len(hair_colors))]
- 
-        eye_colors = ["Brown", "Blue", "Green", "Hazel", "Gray", "Amber"]
-        eye_color = eye_colors[secrets.randbelow(len(eye_colors))]
+        # --- Randomly Selecting Hair and Eye Color, and personality type ---
+        hair_color_chance = secrets.SystemRandom().randint(1, 100)
+        eye_color_chance = secrets.SystemRandom().randint(1, 100)
+        personality_type_chance = secrets.SystemRandom().randint(1, 1000)
 
-        # --- Randomly Assign Personality Type ---
-        personality_types = ["ISTJ", "ISFJ","INFJ","INTJ","ISTP","ISFP","INFP","INTP","ESTP","ESFP","ENFP","ENTP","ESTJ","ESFJ","ENFJ","ENTJ"]
-        personality_type = personality_types[secrets.randbelow(len(personality_types))]
+        if eye_color_chance in range (1,45):
+            eye_color = "Brown"
+        elif eye_color_chance in range (46,72):
+            eye_color = "Blue"
+        elif eye_color_chance in range (73,90):
+            eye_color = "Hazel"
+        elif eye_color_chance in range (91,99):
+            eye_color = "Green"
+        else:
+            eye_color = "Gray"
+
+        if hair_color_chance in range (1,84):
+            hair_color = "Black"
+        elif hair_color_chance in range (85,96):
+            hair_color = "Brown"
+        elif hair_color_chance in [97,98]:
+            hair_color = "Blonde"
+        else:
+            hair_color = "Red"
+
+        if personality_type_chance in range(1, 33):
+            personality_type = "ENTP"
+        elif personality_type_chance in range(33, 66):         
+            personality_type = "INTP"
+        elif personality_type_chance in range(66, 109):        
+            personality_type = "ESTP"
+        elif personality_type_chance in range(109, 153):
+            personality_type = "INFP"
+        elif personality_type_chance in range(153, 207):
+            personality_type = "ISTP"
+        elif personality_type_chance in range(207, 288):
+            personality_type = "ENFP"
+        elif personality_type_chance in range(288, 373):
+            personality_type = "ESFP"
+        elif personality_type_chance in range(373, 460):
+            personality_type = "ESTJ"
+        elif personality_type_chance in range(460, 547):
+            personality_type = "ISFP"
+        elif personality_type_chance in range(547, 661):
+            personality_type = "ISTJ"
+        elif personality_type_chance in range(661, 784):
+            personality_type = "ESFJ"
+        elif personality_type_chance in range(784, 922):
+            personality_type = "ISFJ"
+        elif personality_type_chance in range(922, 937):
+            personality_type = "INFJ"
+        elif personality_type_chance in range(937, 955):
+            personality_type = "ENTJ"
+        elif personality_type_chance in range(955, 976):
+            personality_type = "INTJ"
+        else:                              
+            personality_type = "ENFJ"
 
         # --- Update Totals for Statistics ---
-        if sex == "Male":
-            total_male += 1 
-        elif sex =="Female":
-            total_female += 1 
-
         total_years += birth_year 
         total_age += age 
         total_height += height 
@@ -229,14 +325,11 @@ with open('output/output.csv', 'w', newline='') as output:
             personality_type
         ])
 
-
         character_count += 1 
     # --- End of character generation loop ---
 
     # --- Write Summary Statistics if More Than One Character ---
-    if total_characters == "1":
-        print(f"\n")
-    else:
+    if total_characters > 1:
         print(f"\n Character Averages ")
         print(f"------------------------") 
         print(f"Total Characters: {total_characters}") 
@@ -248,6 +341,8 @@ with open('output/output.csv', 'w', newline='') as output:
         print(f"Youngest Age: {youngest_age} years")
         print(f"Oldest Age: {oldest_age} years")
         print("------------------------")
+    else:
+        print("\n")
 
 # --- Script Complete ---
 end_time = datetime.datetime.now()
