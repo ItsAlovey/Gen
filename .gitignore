@@ -3,18 +3,6 @@ __pycache__/
 *.py[cod]
 *.so
 
-# Ignore all CSV and TXT files globally
-*.csv
-*.txt
-
-# But do NOT ignore csv and txt files inside these folders
-!data/
-!data/**/*.csv
-!data/**/*.txt
-!output/
-!output/**/*.csv
-!output/**/*.txt
-
 # Virtual environments
 venv/
 .env/
