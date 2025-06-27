@@ -1,12 +1,12 @@
 **Character Generator**
 
-**Version 1.7 Update**
+**Version 1.8 Update**
 
-This update enhances character realism by incorporating age-specific height and weight ranges, as well as realistic distributions for eye color, hair color, and personality types. Additionally, it introduces input validation and confirmation for large dataset sizes, thereby improving usability and preparing the codebase for future expansion.
+This update 
 
 **Overview**
 
-This Python script generates random character profiles with comprehensive attributes, including name, age, gender, location, physical features, and personality types. It facilitates bulk generation and outputs data in CSV format, making it suitable for further analysis or machine learning endeavors.
+Update 1.8 — This update refines the output process by writing character generation summaries to a structured text file, complete with runtime and timestamp. It improves readability and sets the foundation for future modularization and UI features.
 
 **Key Features**
 

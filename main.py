@@ -3,8 +3,8 @@
 # Description: This script generates random character 
 #              profiles based on user input.
 # Author: Alovey
-# Date: 2025-06-12
-# Version: 1.7
+# Date: 2025-06-27
+# Version: 1.8
 # License: MIT License
 # ===================================================
 
@@ -55,7 +55,7 @@ start_time = datetime.datetime.now()
 
 
 # --- Open Output File for Writing ---
-with open('output/output.csv', 'w', newline='') as output:
+with open('outputs/output.csv', 'w', newline='') as output:
     writer = csv.writer(output)
     writer.writerow([
         "First Name", "Last Name", "Sex", "Age", "Birth Date", 
@@ -329,24 +329,29 @@ with open('output/output.csv', 'w', newline='') as output:
     # --- End of character generation loop ---
 
     # --- Write Summary Statistics if More Than One Character ---
-    if total_characters > 1:
-        print(f"\n Character Averages ")
-        print(f"------------------------") 
-        print(f"Total Characters: {total_characters}") 
-        print(f"Males vs Females: {total_male} vs {total_female}") 
-        print(f"Average Birth Year: {total_years / int(total_characters):.0f}") 
-        print(f"Average Age: {total_age / int(total_characters):.2f} years") 
-        print(f"Average Height: {total_height / int(total_characters):.2f}cm") 
-        print(f"Average Weight: {total_weight / int(total_characters):.2f}kg")
-        print(f"Youngest Age: {youngest_age} years")
-        print(f"Oldest Age: {oldest_age} years")
-        print("------------------------")
-    else:
-        print("\n")
 
-# --- Script Complete ---
 end_time = datetime.datetime.now()
 run_time = end_time - start_time
+now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-print(f"\nCharacter generation complete. Check output.csv for the results.\n")
-print(f"Runtime: {run_time.total_seconds():.2f} seconds")
+with open('outputs/average.txt', 'w') as average:
+
+    if total_characters > 1:
+        average.write(f"\n=== CHARACTER GENERATION SUMMARY ===")
+        average.write(f"\nTotal Characters: {total_characters}") 
+        average.write(f"\nMales vs Females: {total_male} vs {total_female}") 
+        average.write(f"\nAverage Birth Year: {total_years / int(total_characters):.0f}") 
+        average.write(f"\nAverage Age: {total_age / int(total_characters):.2f} years") 
+        average.write(f"\nAverage Height: {total_height / int(total_characters):.2f}cm") 
+        average.write(f"\nAverage Weight: {total_weight / int(total_characters):.2f}kg")
+        average.write(f"\nYoungest Age: {youngest_age} years")
+        average.write(f"\nOldest Age: {oldest_age} years")
+        average.write("\n====================================\n")
+    else:
+        average.write("\nCharacter generation complete. No averages to report for a single character.")
+
+# --- Script Complete ---
+
+    average.write(f"\nCharacter generation complete. Check output.csv for the results.\n")
+    average.write(f"\nRuntime: {run_time.total_seconds():.2f} seconds\n")
+    average.write(f"\nGenerated on: {now}")
