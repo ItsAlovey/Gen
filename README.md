@@ -1,12 +1,10 @@
 **Character Generator**
 
-**Version 1.8 Update**
-
-This update 
+**Version 1.9 Update** 
 
 **Overview**
 
-Update 1.8 — This update refines the output process by writing character generation summaries to a structured text file, complete with runtime and timestamp. It improves readability and sets the foundation for future modularization and UI features.
+Update 1.9 — I moved all of the information generation into functions so that it is more readable and the main logic is easier to understand.
 
 **Key Features**
 

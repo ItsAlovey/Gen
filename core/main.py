@@ -21,6 +21,7 @@ from functions import (
     get_eye_colour,
     get_personality_type
 )
+
 import datetime
 import csv
 
@@ -132,4 +133,3 @@ with open('outputs/average.txt', 'w') as average:
     average.write(f"\nCharacter generation complete. Check output.csv for the results.\n")
     average.write(f"Runtime: {run_time.total_seconds():.2f} seconds\n")
     average.write(f"Generated on: {now}\n")
-    
