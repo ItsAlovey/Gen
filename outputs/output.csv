@@ -1,11 +1,101 @@
 First Name,Last Name,Sex,Age,Birth Date,Country,Region,Height (cm),Weight (kg),Hair Color,Eye Color,Personality Type
-Jax,Kramer,Male,67,7/4/1958,Ireland,Limerick,179,72,Black,Blue,INTP
-Elliot,Gallagher,Male,66,7/4/1959,United States,Massachusetts,177,71,Black,Brown,ISFJ
-Roselyn,Cervantes,Female,66,7/4/1959,United States,Rhode Island,180,67,Red,Brown,ISFP
-Anthony,Mullins,Male,31,7/4/1994,Ireland,Dublin,176,78,Black,Brown,ISFJ
-Giovanni,Briggs,Male,49,7/4/1976,Ireland,Galway,172,79,Black,Brown,ISTJ
-Trace,Rutledge,Male,30,7/4/1995,Australia,New South Wales,177,80,Black,Brown,ENFJ
-Harrison,Shelton,Male,35,7/4/1990,Australia,New South Wales,169,80,Black,Brown,ISFP
-Melina,Noel,Female,74,7/4/1951,United Kingdom,England,177,66,Black,Brown,ESTJ
-Boden,Walter,Male,55,7/4/1970,Ireland,Cork,185,77,Brown,Blue,ISFP
-Arjun,Stein,Male,63,7/4/1962,United States,Texas,186,70,Black,Brown,ISTP
+Nikolas,Rivers,Male,51,"March 20, 1974",Canada,Saskatchewan,190,81,Black,Brown,ISFJ
+Brielle,Finley,Female,49,"June 4, 1976",Ireland,Kerry,164,60,Black,Brown,ESFJ
+Nevaeh,Simmons,Female,16,"July 1, 2009",United States,Illinois,162,57,Black,Gray,ESFJ
+Nataly,Diaz,Female,37,"September 14, 1988",Ireland,Dublin,174,61,Black,Blue,ESTJ
+Haley,Steele,Female,33,"June 14, 1992",New Zealand,Waikato,180,69,Black,Hazel,ISTP
+Araya,Hayes,Female,53,"July 12, 1972",United States,North Dakota,178,72,Black,Blue,ENTP
+Sydney,Montgomery,Female,56,"January 27, 1969",United Kingdom,Northern Ireland,178,72,Black,Brown,ESTP
+Marco,Carpenter,Male,36,"March 25, 1989",Canada,Quebec,179,75,Brown,Blue,ESFP
+Kendall,Yang,Female,45,"April 3, 1980",Ireland,Laois,176,64,Black,Blue,ISFP
+Shawn,Hays,Male,58,"January 9, 1967",New Zealand,Taranaki,177,81,Black,Gray,INFJ
+Winston,Lopez,Male,51,"June 1, 1974",Canada,Prince Edward Island,174,79,Black,Gray,INTP
+Sincere,Ramsey,Male,63,"May 14, 1962",Australia,Victoria,171,79,Black,Brown,ENFP
+Love,Mathis,Female,27,"November 9, 1997",United Kingdom,England,163,67,Black,Brown,ENFP
+Zakai,Conner,Male,40,"April 4, 1985",Canada,Saskatchewan,174,82,Brown,Brown,ISFJ
+Kendra,Drake,Female,34,"May 22, 1991",Ireland,Dublin,176,66,Black,Hazel,ESTP
+Valentin,Hatfield,Male,20,"April 20, 2005",United Kingdom,England,184,81,Black,Hazel,ENFJ
+Liliana,Blackwell,Female,78,"May 10, 1947",United States,Georgia,173,65,Black,Blue,ENTP
+Everett,Mcfarland,Male,77,"November 2, 1947",Ireland,Mayo,189,70,Red,Blue,ESTJ
+Lee,Howe,Male,36,"March 27, 1989",Australia,Tasmania,173,74,Black,Blue,ESFJ
+Chana,Hickman,Female,40,"October 27, 1984",Australia,Queensland,177,64,Black,Hazel,ESTJ
+Raya,Briggs,Female,13,"August 2, 2012",New Zealand,Hawke's Bay,146,41,Black,Brown,INTJ
+Iris,Rowe,Female,70,"April 14, 1955",Australia,Australian Capital Territory,171,66,Black,Green,ISTJ
+Orion,Holloway,Male,78,"May 13, 1947",United States,Louisiana,176,75,Black,Blue,ESFJ
+Bria,Kemp,Female,20,"November 10, 2004",Canada,Quebec,180,61,Black,Blue,ISFP
+Kyle,Phelps,Male,60,"November 26, 1964",Australia,Northern Territory,189,73,Black,Brown,ISTJ
+Stormi,Wade,Female,45,"December 22, 1979",Canada,Nova Scotia,164,68,Black,Brown,ISTJ
+Waylon,Douglas,Male,41,"October 7, 1983",Canada,Ontario,169,71,Black,Brown,ENFP
+Kataleya,Mayer,Female,52,"March 12, 1973",United States,Illinois,180,64,Black,Hazel,ISFP
+Tatum,Arnold,Female,40,"December 19, 1984",Australia,South Australia,163,70,Black,Hazel,INFP
+Ramona,Peters,Female,53,"June 7, 1972",Australia,Victoria,164,66,Black,Blue,ESFJ
+Palmer,Rush,Female,75,"April 25, 1950",United States,Pennsylvania,177,67,Black,Hazel,ENFJ
+Ryan,Sutton,Female,23,"May 14, 2002",Australia,Australian Capital Territory,172,73,Brown,Blue,ISFP
+Conor,Pickett,Male,76,"June 5, 1949",United States,New York,173,78,Brown,Brown,ESFP
+Harlow,Cummings,Female,54,"December 7, 1970",United Kingdom,Scotland,180,67,Black,Gray,ENTP
+Nasir,Kelly,Male,23,"January 25, 2002",United States,Nebraska,172,80,Black,Brown,ENTP
+Michaela,Cruz,Female,68,"October 6, 1956",Canada,Manitoba,170,66,Brown,Blue,ENTP
+Kenia,Green,Female,24,"July 26, 2001",United States,Massachusetts,166,71,Black,Brown,ISFJ
+Troy,Whitfield,Male,65,"April 9, 1960",Ireland,Limerick,170,75,Black,Brown,ENFP
+Ty,Burns,Male,80,"May 1, 1945",United Kingdom,Scotland,189,76,Brown,Brown,ISTJ
+Opal,Hendrix,Female,64,"June 10, 1961",Canada,Prince Edward Island,166,73,Black,Brown,ISTJ
+Edith,Campbell,Female,25,"November 3, 1999",New Zealand,Taranaki,172,61,Black,Green,ESFJ
+Madalyn,Bennett,Female,33,"July 3, 1992",United Kingdom,Wales,164,72,Black,Blue,ISFJ
+Zev,Schwartz,Male,32,"July 31, 1993",New Zealand,Southland,172,68,Black,Brown,ISFJ
+Jocelyn,Lott,Female,16,"August 5, 2009",Ireland,Wexford,163,59,Black,Blue,ISFP
+Cayden,Gamble,Male,61,"March 30, 1964",Ireland,Monaghan,183,77,Black,Brown,ISTJ
+Izael,Hurst,Male,71,"July 18, 1954",United States,California,185,76,Black,Green,ENTP
+Cecelia,Hall,Female,77,"December 8, 1947",Australia,New South Wales,180,60,Black,Brown,ENTP
+Mohammad,Jarvis,Male,47,"May 2, 1978",Ireland,Limerick,189,75,Brown,Brown,ESFP
+Santiago,Cortez,Male,43,"July 22, 1982",Australia,New South Wales,181,78,Black,Hazel,ENFP
+Everett,Whitehead,Male,47,"August 1, 1978",Ireland,Westmeath,189,78,Red,Brown,ESFJ
+Layne,Duran,Male,23,"August 3, 2002",Canada,Alberta,190,76,Black,Gray,ISFJ
+Dream,Blankenship,Female,29,"July 18, 1996",Ireland,Leitrim,164,64,Black,Green,ESTJ
+Noah,Barr,Male,73,"October 11, 1951",United Kingdom,Wales,168,81,Black,Brown,ENFP
+Maximiliano,Hebert,Male,77,"February 14, 1948",United Kingdom,Wales,189,75,Black,Blue,ISFJ
+Rocky,Norman,Male,52,"January 26, 1973",United Kingdom,Northern Ireland,180,70,Black,Blue,ENTP
+Bristol,Le,Female,67,"April 12, 1958",United States,Oregon,174,68,Black,Blue,ENFP
+Kashton,Higgins,Male,35,"January 15, 1990",Canada,Nova Scotia,186,73,Brown,Hazel,ISTJ
+Molly,Taylor,Female,48,"July 7, 1977",Canada,Newfoundland and Labrador,172,65,Black,Blue,ESFP
+Allison,Burks,Female,24,"July 16, 2001",United Kingdom,Northern Ireland,169,64,Black,Hazel,ESTJ
+Benjamin,Butler,Male,33,"August 16, 1992",New Zealand,Marlborough,186,76,Black,Brown,ESFJ
+Barbara,Armstrong,Female,76,"July 1, 1949",Canada,Alberta,165,71,Black,Brown,ESTJ
+Nolan,Howe,Male,38,"April 18, 1987",Ireland,Leitrim,181,77,Black,Brown,INFJ
+Kash,Velazquez,Male,25,"January 10, 2000",United States,North Carolina,182,76,Black,Hazel,ISTJ
+Indy,Frazier,Female,38,"June 5, 1987",United States,Tennessee,164,73,Black,Blue,ENFP
+Carolina,Glenn,Female,71,"January 27, 1954",United Kingdom,Scotland,171,73,Black,Blue,ENTJ
+Autumn,Tyler,Female,56,"August 31, 1969",New Zealand,Auckland,169,73,Black,Brown,ENFP
+Kyler,Alford,Male,71,"December 16, 1953",United States,New Mexico,178,76,Black,Blue,ENFJ
+Ellie,Berry,Female,79,"December 25, 1945",United States,North Dakota,178,70,Black,Blue,ESTJ
+Stella,Estrada,Female,58,"January 15, 1967",United Kingdom,Wales,177,67,Black,Hazel,ESTJ
+Brooke,Barry,Female,25,"January 22, 2000",United Kingdom,Scotland,165,70,Black,Hazel,ENFP
+Joziah,Sweet,Male,69,"August 17, 1956",New Zealand,Hawke's Bay,176,72,Black,Brown,ESFJ
+Vincent,Lara,Male,60,"June 30, 1965",Australia,South Australia,181,80,Black,Green,ISTP
+Lydia,Mendez,Female,39,"July 7, 1986",United States,Kentucky,168,73,Black,Gray,ISFJ
+Lilia,Kramer,Female,43,"August 19, 1982",Australia,Western Australia,164,68,Brown,Hazel,ENFP
+Sebastian,Harrison,Male,29,"December 11, 1995",Australia,Australian Capital Territory,184,68,Black,Brown,ISFP
+Bristol,Frederick,Female,23,"May 7, 2002",Australia,South Australia,171,71,Brown,Blue,ESTJ
+Liberty,Pacheco,Female,36,"September 15, 1989",Canada,British Columbia,174,59,Black,Blue,ESFJ
+Lucille,Carr,Female,40,"June 30, 1985",United Kingdom,Wales,169,72,Black,Blue,ENFJ
+Kylian,Finch,Male,59,"September 1, 1966",Canada,Manitoba,177,71,Black,Hazel,ENFP
+Carmelo,Hardy,Male,59,"August 1, 1966",United Kingdom,England,171,73,Brown,Blue,ESTJ
+Mohammad,Sexton,Male,71,"March 31, 1954",New Zealand,Otago,190,76,Black,Brown,ESFP
+Ayden,Levy,Male,39,"January 23, 1986",Ireland,Kerry,180,72,Brown,Brown,ISFJ
+Marcus,Cruz,Male,74,"June 16, 1951",Canada,Ontario,190,78,Black,Blue,ISTP
+Giovanna,Lynch,Female,52,"October 28, 1972",New Zealand,Gisborne,173,73,Black,Gray,ISTP
+Zen,Dillard,Male,50,"April 29, 1975",United Kingdom,Northern Ireland,170,78,Black,Hazel,ENTP
+Kiana,Dalton,Female,66,"May 24, 1959",Canada,New Brunswick,168,68,Black,Green,ISTJ
+Ermias,Morin,Male,45,"August 22, 1980",Canada,British Columbia,169,68,Brown,Brown,ENTJ
+Max,Mcclain,Male,76,"March 8, 1949",Australia,Australian Capital Territory,173,70,Black,Hazel,ESFP
+Lachlan,Norris,Male,75,"November 23, 1949",Australia,Victoria,169,71,Black,Brown,ENFJ
+Jazmine,Page,Female,60,"November 20, 1964",United States,South Carolina,173,72,Brown,Blue,ISFJ
+Alicia,Wilkinson,Female,61,"March 23, 1964",Canada,Manitoba,173,61,Black,Hazel,ISFJ
+Galilea,Garcia,Female,15,"January 15, 2010",United States,Alaska,158,51,Brown,Blue,ESTJ
+Lola,Ruiz,Female,16,"May 8, 2009",Canada,New Brunswick,164,54,Black,Blue,ESTJ
+Itzel,Clemons,Female,57,"November 19, 1967",United States,Maryland,167,67,Black,Brown,INTP
+Astrid,Austin,Female,21,"June 10, 2004",United Kingdom,Scotland,168,69,Black,Brown,ISTP
+Knox,Strong,Male,70,"August 7, 1955",United Kingdom,Northern Ireland,177,76,Black,Hazel,ISTP
+Shiloh,Silva,Female,59,"August 29, 1966",Canada,Nova Scotia,164,63,Black,Hazel,ESFP
+Lionel,Chang,Male,73,"November 16, 1951",Canada,Prince Edward Island,169,81,Black,Blue,INFP
+Ari,Stanley,Female,74,"July 1, 1951",Australia,Western Australia,165,64,Brown,Brown,ESFP
+Jade,Rowe,Female,32,"March 2, 1993",United States,Wyoming,168,61,Brown,Green,ESTJ
