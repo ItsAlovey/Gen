@@ -1,10 +1,12 @@
 **Character Generator**
 
-**Version 1.9 Update** 
+**Version 1.9.1 Update** 
 
 **Overview**
-
-Update 1.9 — I moved all of the information generation into functions so that it is more readable and the main logic is easier to understand.
+Update 1.9.1 — Introduced a new folder structure (`core-geni`) for ongoing backend development. 
+This will eventually replace the old `core` folder as the project transitions toward faster 
+implementations (Rust/C++), SQL database support, and improved scalability for large-scale 
+character generation.
 
 **Key Features**
 
