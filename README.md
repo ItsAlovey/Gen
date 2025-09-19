@@ -1,5 +1,7 @@
 Geni – Character Generator
 
+Gen is now also known as Geni
+
 **Version 1.9.2**
 
 **Overview**
