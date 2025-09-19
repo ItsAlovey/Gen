@@ -1,50 +1,35 @@
-**Character Generator**
+Geni – Character Generator
 
-**Version 1.9.1 Update** 
+**Version 1.9.2**
 
 **Overview**
-Update 1.9.1 — Introduced a new folder structure (`core-geni`) for ongoing backend development. 
-This will eventually replace the old `core` folder as the project transitions toward faster 
-implementations (Rust/C++), SQL database support, and improved scalability for large-scale 
-character generation.
+Geni generates realistic random characters or datasets of characters. Each character includes detailed attributes such as name, age, gender, location, physical traits, personality type, zodiac sign, and favorite color. Users can generate a single character or a full dataset with summary statistics.
 
-**Key Features**
-
-* **Character Generation:** The script generates multiple characters based on user input.
-* **Randomized Attributes:** It incorporates randomized attributes such as names, birth dates, locations, height, weight, hair and eye color, and personality types.
-* **CSV Output:** The generated character data is exported to a structured CSV file, facilitating easy import into data analysis tools.
-* **Summary Statistics:** The script provides summary statistics, including averages and demographics.
-* **External Data Files:** The script organizes the data with external data files for names, countries, and regions.
+**Features**
+	•	Single Character or Dataset: Choose to generate one character or multiple characters.
+	•	Customizable Attributes: Optionally set gender and age, or let the generator randomize them.
+	•	Physical Traits: Height, weight, hair (color, length, type), eye color, and blood type.
+	•	Personality & Interests: Personality type, zodiac sign, and favorite color.
+	•	Location: Country, region, and city-based selections.
+	•	CSV Output & Summaries: Dataset outputs include CSV files and summary statistics (outputs/average.txt).
+	•	External Data Files: Names, countries, and regions are loaded from organized external files.
 
 **Getting Started**
-
-1. Clone the repository.
-2. Ensure that the data files (male_names.txt, female_names.txt, last_names.txt, countries.txt) are located within the data/ folder.
-3. Run the main.py script and specify the desired number of characters to generate.
-4. Generated profiles will be saved in the output/output.csv file.
+	1.	Clone the repository.
+	2.	Ensure data files (male_names.txt, female_names.txt, last_names.txt, countries.txt) are in the data/ folder.
+	3.	Run choice.py to select single character or dataset.
+	4.	Outputs are saved in outputs/output.csv. Datasets also generate outputs/average.txt.
 
 **Requirements**
-
-* Python 3.x
-* No external libraries are required beyond standard Python modules.
+	•	Python 3.x
+	•	No additional libraries required
 
 **Contributing**
-
-Contributions are welcome! If you wish to enhance the project, please follow these steps:
-
-* Fork the repository.
-* Create a new branch dedicated to your feature or bug fix.
-* Implement your changes with clear and concise commits.
-* Submit a pull request describing your changes.
-
-**Code Documentation and Testing**
-
-Please ensure that your code is well-documented and thoroughly tested. For significant changes, it is advisable to open an issue prior to discussing your plans.
+	•	Fork the repository.
+	•	Create a feature branch.
+	•	Implement changes with clear commits.
+	•	Submit a pull request describing your updates.
 
 **License**
 
-This project is licensed under the MIT License. For further details, please refer to the LICENSE file.
-
-
-
-
+This project is licensed under the MIT License. See the LICENSE file for details.

@@ -1,17 +1,12 @@
 
 === CHARACTER GENERATION SUMMARY ===
-Total Characters: 100
-Males vs Females: 45 vs 55
-Average Birth Year: 1976
-Average Age: 49.17 years
-Average Height: 173.98cm
-Average Weight: 70.22kg
-Youngest Age: 13 years
-Oldest Age: 80 years
+Total Characters: 10
+Males vs Females: 8 vs 2
+Average Age: 53.70
+Average Height: 175.50cm
+Average Weight: 71.70kg
+Youngest Age: 17
+Oldest Age: 83
 ====================================
-
-Character generation complete. Check output.csv for the results.
-
-Runtime: 0.04 seconds
-
-Generated on: 2025-09-17 11:33:06
+Runtime: 0.01 seconds
+Generated on: 2025-09-18 22:43:30

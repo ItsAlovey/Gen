@@ -1,15 +1,23 @@
-# Treat Python and text files as text
+# ===================================================
+# Python and text files
+# ===================================================
 *.py text
 *.txt text
 *.csv text
 
-# Normalize line endings
+# Normalize line endings for all text files
 * text=auto
 
-# Handle shell scripts or Unix tools
+# Shell scripts
 *.sh text eol=lf
 
-# Mark Jupyter notebooks if you ever use them
+# Jupyter notebooks
 *.ipynb text
 
-# Keep consistent behavior across platforms
+# Markdown, README, and docs
+*.md text
+
+# Optional: YAML / JSON files
+*.yml text
+*.yaml text
+*.json text
